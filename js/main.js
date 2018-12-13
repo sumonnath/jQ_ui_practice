@@ -1,10 +1,11 @@
 
+
 $(document).ready(function(){
-	$("#draggable1").draggable();
+  $("#draggable1").draggable();
 
-	$("#draggable").draggable();
+  $("#draggable").draggable();
 
-	$("#droppable").droppable({
+  $("#droppable").droppable({
       drop: function(event, ui) {
         $( this )
           .addClass("ui-state-highlight")
@@ -12,6 +13,8 @@ $(document).ready(function(){
             .html("Dropped!");
       }
     });
+
+    $( "#resizable" ).resizable();
 
     $( "#selectable" ).selectable();
 
